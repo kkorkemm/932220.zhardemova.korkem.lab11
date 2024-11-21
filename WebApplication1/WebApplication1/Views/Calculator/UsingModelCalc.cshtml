@@ -1,0 +1,16 @@
+﻿@model CalculatorViewModel
+
+<h1>Using Model Calc</h1>
+
+<p><b>Число 1:</b> @Model.Number1</p>
+<p><b>Число 2:</b> @Model.Number2</p>
+
+<p><b>Сумма:</b>  @Model.Number1 + @Model.Number2 = @Model.Sum</p>
+<p><b>Разность:</b>  @Model.Number1 - @Model.Number2 = @Model.Difference</p>
+<p><b>Произведение:</b>  @Model.Number1 * @Model.Number2 = @Model.Product</p>
+<p><b>Частное:</b> @Model.Number1 / @Model.Number2 = @Model.Quotient</p>
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <p style="color: red;">@ViewBag.ErrorMessage</p>
+}

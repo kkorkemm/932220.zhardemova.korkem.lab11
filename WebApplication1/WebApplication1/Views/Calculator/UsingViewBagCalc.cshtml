@@ -1,0 +1,15 @@
+﻿<h1>Using ViewBag Calc</h1>
+
+<p><b>Число 1:</b> @ViewBag.Number1</p>
+<p><b>Число 2:</b> @ViewBag.Number2</p>
+
+<p><b>Сумма:</b>  @ViewBag.Number1 + @ViewBag.Number2 = @ViewBag.Sum</p>
+<p><b>Разность:</b>  @ViewBag.Number1 - @ViewBag.Number2 = @ViewBag.Difference</p>
+<p><b>Произведение:</b>  @ViewBag.Number1 * @ViewBag.Number2 = @ViewBag.Product</p>
+<p><b>Частное:</b> @ViewBag.Number1 / @ViewBag.Number2 = @ViewBag.Quotient</p>
+
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <p style="color: red;">@ViewBag.ErrorMessage</p>
+}
